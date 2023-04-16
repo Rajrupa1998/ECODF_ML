@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Using plain html in Pug</title> -->
+  <title>DATAFRAME ENERGY CONSUMPTION TOOLS</title>
+  <link rel="stylesheet" href='static/stylesheet.css'>
+
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+
+    <h1>DATAFRAME ENERGY CONSUMPTION TOOLS</h1>
+
+
+    <form action="\" method="post" id="contact" enctype="multipart/form-data">
+       
+      <div style="position:relative; left:-80px;">
+        <input type="text" name="library" id="id1" placeholder="Enter dataframe library name" list="dataframe library">
+        <datalist id="dataframe library">
+          <option value="pandas">
+          <option value="vaex">
+          <option value="dask"></option>
+        </datalist>
+        <input type="text" name="library1" id="id2" placeholder="Enter dataframe library name"
+          list="dataframe library1">
+        <datalist id="dataframe library1">
+          <option value="pandas">
+          <option value="dask">
+            <option value="dask">
+          </option>
+        </datalist>
+      </div>
+      <!-- <input type="text" name="library" id="id1"placeholder="Enter dataframe library name" list="dataframe library">
+      <datalist id="dataframe library">
+        <option value="pandas">
+        <option value="vax">
+        <option value="Dask"></option>
+      </datalist> -->
+      <input type="text" name="task" placeholder="Enter the task " list="task name">
+      <datalist id="task name">
+        <option value="load_csv">
+        <option value="dropna">
+        <option value="fillna">
+        <option value="count">
+          <option value="min">
+            <option value="max">
+              <option value="mean">
+                <option value="unique">
+        </option>
+      </datalist>
+      <input type="file" name="files1">
+
+      <!-- <input type="text" name="task"  placeholder="Enter the task">  -->
+      <button class="btn">Submit</button>
+
+      <!-- <input type="submit" value="Submit"/> -->
+      <!--<textarea name="address" id="address" cols="30" rows="10" placeholder="Performance evaulation result"></textarea> -->
+    
+    </form>
+    <div>
+        <table style="width:90%" class="table">
+            <thead>
+              <tr>
+                <!-- <th class="table1" scope="col">Task name</th> -->
+                <th scope="col">Library</th>
+                <th scope="col" style="width:32%">Time duration</th>
+                <th scope="col">Pkg 0</th>
+                <th scope="col">Pkg 1</th>
+                <th scope="col">Dram 0</th>
+                <th scope="col">Dram 1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table1">
+                {% for ele in list %}
+                <td>{{ele}}</td>
+                {% endfor %}
+              </tr>
+      
+      
+              <tr class="table1">
+                {%for ele in list1 %}
+                <td>{{ele}}</td>   
+              {%endfor%}           </tr>
+            </tbody>
+          </table>
+          <!-- <table style="width:90%" class="table">
+            <thead>
+              <tr> -->
+                <!-- <th class="table1" scope="col">Task name</th> -->
+                <!-- <th scope="col">Library</th>
+                <th scope="col" style="width:32%">Time duration</th>
+                <th scope="col">Pkg 0</th>
+                <th scope="col">Pkg 1</th>
+                <th scope="col">Dram 0</th>
+                <th scope="col">Dram 1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table2">
+                {% for ele in list1 %}
+                <td>{{ele}}</td>
+                {% endfor %}
+              </tr>
+      
+      
+              <tr class="table2">
+                <!-- <th scope="row">1</th> -->
+                <!-- <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table> --> -->
+    </div>
+    
+  </div>
+</body>
+
+</html>
