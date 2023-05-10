@@ -22,3 +22,16 @@ Clone the repo https://github.com/Rajrupa1998/ISE_Dataframe_ML_Algo_energy_tool
 3. `venv/Scripts/Activate`
 4. Install required dependencies with `pip install -r requirements.txt`
 
+## Screenshots
+<p>
+<h3>Landing Page</h3>
+<img src="Images/codeEntropyGraph.png">
+<h3>Dataframe Energy Consumption Result</h3>
+    <img src="Images/colorCoding.png">
+<h3>ML algorithms Energy Consumption Result</h3>
+    <img src="Images/CVE.png">
+ <h3>Community Activeness graph</h3>
+
+</p>
+ 
+
