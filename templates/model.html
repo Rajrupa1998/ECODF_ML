@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href='static/model_styles.css'>
+</head>
+<body>
+  <h1>PLEASE SELECT ML ALGORITHMS TO EVALUATE ENERGY AND PERFORMANCE</h1>
+
+  <form action="/selectModel" method="POST" enctype="multipart/form-data">
+    <input type="text" name="size" placeholder="Enter percentage of test data split">
+    <input type="text" name="model1" id="id2" placeholder="Select First ML model for training" list="model1">
+            <datalist id="model1">
+              <option value="test_linear_regression">
+              <option value="test_gaussian_regression">
+                <option value="test_decision_tree_regression">
+                <option value="test_neural_network_regression">
+                <option value="test_support_vector_regression">
+                <option value="test_random_forest_classification">
+                <option value="test_logistic_regressor_classification">
+                <option value="test_gaussian_NB_classification">
+                <option value="test_SVM_classification">
+                  <option value="test_decision_tree_classification">
+              </option>
+            </datalist>
+    <input type="text" name="model2" id="id3" placeholder="Select Second ML model for training" list="model2">
+            <datalist id="model2">
+              <option value="test_linear_regression">
+              <option value="test_gaussian_regression">
+                <option value="test_decision_tree_regression">
+                <option value="test_neural_network_regression">
+                <option value="test_support_vector_regression">
+                <option value="test_random_forest_classification">
+                <option value="test_logistic_regressor_classification">
+                <option value="test_gaussian_NB_classification">
+                <option value="test_SVM_classification">
+                  <option value="test_decision_tree_classification"></option>
+              </option>
+            </datalist>
+    
+            <button class="btn">Submit</button>
+        </form>
+  
+</body>
+</html>

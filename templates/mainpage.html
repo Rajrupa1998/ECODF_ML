@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='static/upload_style.css'>
+</head>
+<body>
+    <form action="/upload?col_names={{ col_names }}?file_path={{ file_path }}" method="POST" enctype="multipart/form-data">
+         <!-- <label for="file">File:</label>
+        <input type="file" id="file" name="files1"><br> -->
+        <input type="file" id="id1" name="files1"><br>
+        <button onclick="myFunction()" id="id2">Upload</button>
+       
+    </form>
+    
+    <form action="/getData?col_names={{ col_names }}?file_path={{ file_path }}" method="POST" enctype="multipart/form-data">
+            <body>
+    
+            
+              
+                    <div id="id3">
+                    <h3>Select input parameters</h3>
+                    {% for col in col_names %}
+                    <input class="messageCheckbox" type="checkbox" name="myCheck[]" value="{{ col }}">
+                    <label for="myCheck[]"> {{ col }}</label><br>
+                    {% endfor %}
+                    </div>
+                    <div id="id4">
+                    <h3>Select output parameter</h3>
+                    {% for col in col_names %}
+                    <input class="messageRadio" type="radio" name="outCheck" value="{{ col }}">
+                    <label for="outCheck"> {{ col }}</label><br>
+                    {% endfor %}
+                    </div>
+                    <br>
+                    <button name="submit_button" class="btn" value="submit_button" onclick="checkCheckbox()">Submit</button>
+                    
+                    <!-- <script>
+                        function myFunction(){
+                            document.getElementById("id8").style.display="block"
+                        }
+                    </script> -->
+                
+    
+</body>
+    </form>
+</html>
+
+
+
+
+
+<script>
+
+
+//     function myFunction() {
+        
+//         document.getElementsByName("myCheck[]").classList.toggle("show");
+    
+// }
+function checkCheckbox() {  
+    
+    var checkedValue = null; 
+    var outputParam = document.getElementsByClassName('messageRadio');
+    var arr=[]
+    var inputElements = document.getElementsByClassName('messageCheckbox');
+    for(var i=0; inputElements[i]; ++i){
+        if(inputElements[i].checked){
+           checkedValue = inputElements[i].value;
+           //console.log(checkedValue)
+           arr.push(checkedValue)
+           
+        }
+    }
+    
+    for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+ 
+}
+
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
+</script>

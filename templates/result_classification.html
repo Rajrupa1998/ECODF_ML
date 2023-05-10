@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href='static/results_styles.css'>
+</head>
+
+<body>
+  <div>
+    <h1 id="id5">ENERGY CONSUMPTION VALUE</h1>
+    <table  class="table">
+      <thead>
+        <tr>
+          <th scope="col">Timestamp</th>
+          <th scope="col" width=22%>Model</th>
+          <th scope="col">Time Duration</th>
+          <th scope="col">package_0</th>
+          <th scope="col">package_0</th>
+          <th scope="col">dram_0</th>
+          <th scope="col">dram_1</th>
+          <th scope="col">nvidia_gpu_0</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table1">
+          {% for item in energy_result_list1 %}
+          <td>{{item}}</td>
+          {% endfor %}
+        </tr>
+
+
+        <tr class="table1">
+          {% for item in energy_result_list2 %}
+          <td>{{item}}</td>
+          {% endfor %}
+        </tr>
+
+
+      </tbody>
+    </table>
+    <table  class="table">
+      <h1 id="id5">MODEL PREDICTION RESULT</h1>
+      <thead>
+        <tr>
+            <th scope="col" width=22%>>Model</th>
+            <th scope="col">Score</th>
+            <th scope="col">Accuracy</th>
+            <th scope="col" >Recall</th>
+            <th scope="col">Precision</th>
+            <th scope="col">specificity</th>
+            <th scope="col">F1 Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <br>
+
+        <tr class="table2">
+          {% for item in prediction_list1 %}
+          <td>{{item}}</td>
+          {% endfor %}
+        </tr>
+        <br>
+        <tr class="table2">
+          {% for item in prediction_list2 %}
+          <td>{{item}}</td>
+          {% endfor %}
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
