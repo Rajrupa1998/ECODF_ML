@@ -30,7 +30,7 @@ Clone the repo https://github.com/Rajrupa1998/ISE_Dataframe_ML_Algo_energy_tool
     <img src="Images/df.png">
 <h3>ML algorithms Energy Consumption Result</h3>
     <img src="Images/model.png">
- <h3>Community Activeness graph</h3>
+
 
 </p>
  
