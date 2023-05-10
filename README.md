@@ -1,11 +1,10 @@
 #ISE_Dataframe_ML_Algo_energy_tool
+This too provides comprehensive analysis of various dataframe libraries and machie learning algorithms from energy consumption perspective.
 
-Requirements
+##Requirements
 Python 3
 Flask API
 Intel operaing system
 
-#This too provides comprehensive analysis of various dataframe libraries and machie learning algorithms from energy consumption perspective.
-
-#Parameters related to energy traces
+##Parameters related to energy traces
 #tag, timestamp,time_duration, dram_0, dram_1, package_0, package_1
