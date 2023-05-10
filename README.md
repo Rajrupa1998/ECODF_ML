@@ -1,4 +1,10 @@
 #ISE_Dataframe_ML_Algo_energy_tool
+
+Requirements
+Python 3
+Flask API
+Intel operaing system
+
 #This too provides comprehensive analysis of various dataframe libraries and machie learning algorithms from energy consumption perspective.
 
 #Parameters related to energy traces
