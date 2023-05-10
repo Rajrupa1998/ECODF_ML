@@ -15,4 +15,4 @@ This too provides comprehensive analysis of various dataframe libraries and mach
 
 ## Installation
 
-Clone the repo [https://github.com/Rajrupa1998/ISE_Dataframe_ML_Algo_energy_tool]
+Clone the repo https://github.com/Rajrupa1998/ISE_Dataframe_ML_Algo_energy_tool
