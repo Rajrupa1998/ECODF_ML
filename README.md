@@ -25,7 +25,7 @@ Clone the repo https://github.com/Rajrupa1998/ISE_Dataframe_ML_Algo_energy_tool
 ## Screenshots
 <p>
 <h3>Landing Page</h3>
-<img src="landing.png">
+<img src="Images/landing.png">
 <h3>Dataframe Energy Consumption Result</h3>
     <img src="Images/df.png">
 <h3>ML algorithms Energy Consumption Result</h3>
