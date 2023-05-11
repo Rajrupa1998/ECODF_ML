@@ -6,6 +6,6 @@ numpy==1.22.3
 pandas==1.4.1
 requests==2.27.1
 seaborn==0.11.2
-werkzeug=2.3.4
-Dask=2023.4.1
-Vaex=4.16.0
+werkzeug==2.3.4
+Dask==2023.4.1
+Vaex==4.16.0
